@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <mapping-file>ff/FsaveCloseEntity.xml</mapping-file>
+        <class>ff.all.BpControlsBkEntity</class>
+        <class>ff.all.BpRolesQueriesEntity</class>
+        <class>ff.all.BpTempGetNoRowsEntity</class>
+        <class>ff.all.BpTempVoRowsEntity</class>
+        <class>ff.all.CifEntity</class>
+        <class>ff.all.CifAddressEntity</class>
+        <class>ff.all.CifBankRelationsEntity</class>
+        <class>ff.all.CifContactPersonEntity</class>
+        <class>ff.all.CifFatcaEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@10.3.1.71:1521:orcl"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
